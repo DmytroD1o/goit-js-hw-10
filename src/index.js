@@ -64,7 +64,9 @@ function onClick (e) {
      loader.classList.add('is-hidden');
         
     }).catch(error => {
-        err.classList.add('.error-hidden');
+      loader.classList.remove('loader')
+      loader.classList.add('is-hidden')
+        err.classList.add('error-no-hidden');
         err.classList.remove('error');
         select.classList.add('is-hidden');
 catInfo.classList.remove('cat-info');
